@@ -30,7 +30,7 @@ jobs:
     - name: Build Release APK
       run: ./gradlew assembleRelease
     - name: Releasing using Hub
-      uses: VladDaniliuk/action-release-releaseapk@master
+      uses: CofactorSystems/action-release-releaseapk@master
       env:
        GITHUB_TOKEN: ${{ secrets.TOKEN }}
        VERSION_VARIABLE: versionName
