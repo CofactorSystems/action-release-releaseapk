@@ -1,12 +1,20 @@
-name: "Build Android release APK"
+name: "Build Android release apk"
 branding:
   icon: "package"
   color: "red"
-description: "Build Android release APK and upload as a github release."
-author: "VladDaniliuk"
+description: "Build Android release apk and upload as a github release."
+author: "farmisen"
 inputs:
   GITHUB_TOKEN:
-    description: "Github secret token to allow automated publishing of APK to release."
+    description: "Github secret token to allow automated publishing of apk to release."
+  APP_FOLDER: 
+    description: "main folder to search for the apk. (default to app)."
+  APP_FILE: 
+    description: "file to search for versionCode. (default to app/build.gradle)"
+  NAME_VARIABLE: 
+    description: "name of generated apk. (default to app-release.apk)"
+  RELEASE_TITLE: 
+    description: "title for releasing application."
 runs:
   using: "docker"
   image: "Dockerfile"

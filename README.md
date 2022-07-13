@@ -52,11 +52,11 @@ I am unsure as to why using the default `GITHUB_TOKEN` provided universally will
 
 You'll need to provide these environment variables to specify exactly what information is needed to build the APK.
 
-* **APP_FOLDER**: main folder to search for the apk. Most of the time, it's `app`
-* **APP_FILE**: file to search for the versin. This action only used with kotlins `buildSrc`
+* **APP_FOLDER**: description: "main folder to search for the apk. (default to `app`)."
+* **APP_FILE**: file to search for `versionCode`. (default to app/build.gradle)
+* **NAME_VARIABLE**: name of generated apk. (default to `app-release.apk`)
 * **RELEASE_TITLE**: title for releasing application
-* **NAME_VARIABLE**: name of generated apk. Standard name `app-release.apk`
 
 ## Credits
 
-Based off [ShaunLWM/action-release-debugapk](https://github.com/ShaunLWM/action-release-debugapk) and [kyze8439690/action-release-releaseapk](https://github.com/kyze8439690/action-release-releaseapk)
+Based off [ShaunLWM/action-release-debugapk](https://github.com/ShaunLWM/action-release-debugapk) and [kyze8439690/action-release-releaseapk](https://github.com/kyze8439690/action-release-releaseapk) and [VladDaniliuk/action-release-releaseapk](https://github.com/VladDaniliuk/action-release-releaseapk)
