@@ -6,8 +6,8 @@ LABEL "com.github.actions.description"="Build & Publish Release APK on Github us
 LABEL "com.github.actions.icon"="package"
 LABEL "com.github.actions.color"="red"
 
-LABEL "repository"="https://github.com/VladDaniliuk/action-release-releaseapk"
-LABEL "maintainer"="VladDaniliuk"
+LABEL "repository"="https://github.com/CofactorSystems/action-release-releaseapk"
+LABEL "maintainer"="farmisen"
 
 RUN apt update \
 	&& apt -y upgrade \
