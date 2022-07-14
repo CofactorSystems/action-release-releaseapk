@@ -34,7 +34,7 @@ jobs:
       env:
        GITHUB_TOKEN: ${{ secrets.TOKEN }}
        VERSION_VARIABLE: versionName
-       APP_FILE: buildSrc/Android.kt
+       APP_FILE: app/build.gradle
        APP_FOLDER: app
        RELEASE_TITLE: New Build
        NAME_VARIABLE: app-release.apk
